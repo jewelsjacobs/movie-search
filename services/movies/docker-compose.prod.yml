@@ -2,5 +2,3 @@ version: "2.1"
 services:
   movies-service:
     command: yarn start
-    environment:
-      - MONGO_URI=mongodb://azure-node-todo-db:@azure-node-todo-db.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
