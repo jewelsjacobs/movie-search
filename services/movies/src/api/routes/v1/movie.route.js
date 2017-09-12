@@ -49,7 +49,7 @@ router
    *     }
    *
    * @apiExample {curl} Example usage:
-   * curl -H "Content-Type: application/json" -X POST -d '{"title": "The Matrix", "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg", "key": "tt0133093"}' http://localhost:3000/v1/movies
+   * curl -H "Content-Type: application/json" -X POST -d '{"title": "The Matrix", "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg", "key": "tt0133093"}' http://localhost:3001/v1/movies
    */
   .post(validate(createMovie), controller.create)
   /**
@@ -76,7 +76,7 @@ router
    *     ]
    *
    * @apiExample {curl} Example usage:
-   * curl -i http://localhost:3000/v1/movies
+   * curl -i http://localhost:3001/v1/movies
    *
    */
   .get(controller.list);

@@ -14,7 +14,7 @@ const router = express.Router();
  *     HTTP/1.1 200 OK
  *
  * @apiExample {curl} Example usage:
- * curl -i http://localhost:3000/health-check
+ * curl -i http://localhost:3001/health-check
  */
 router.get('/health-check', (req, res) => res.send('OK'));
 
