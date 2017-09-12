@@ -1,0 +1,43 @@
+version: "2.1"
+
+services:
+  movies-service:
+    container_name: movies-service
+    image: movies-service
+    build: ./services/movies/
+    volumes:
+      - './services/movies:/usr/src/app'
+      - './services/movies/package.json:/usr/src/package.json'
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017
+      - NODE_ENV=development
+    ports:
+      - 3000:3000
+    depends_on:
+      mongodb:
+        condition: service_started
+    links:
+      - mongodb
+
+  web-service:
+    container_name: web-service
+    image: web-service
+    build: ./services/web/
+    volumes:
+      - './services/web:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - 3007:3006
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017
+      - NODE_ENV=development
+    depends_on:
+      movies-service:
+        condition: service_started
+    links:
+      - movies-service
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
