@@ -1,4 +1,4 @@
-# Developing Microservices - Node, React, and Docker
+# Movie Search
 
 [![Build Status](https://travis-ci.org/jewelsjacobs/movie-search.svg?branch=master)](https://travis-ci.org/jewelsjacobs/movie-search)
 
