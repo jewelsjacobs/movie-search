@@ -14,11 +14,11 @@ const router = express.Router();
  *     HTTP/1.1 200 OK
  *
  * @apiExample {curl} Example usage:
- * curl -i http://localhost:3001/health-check
+ * curl -i http://localhost:3000/v1/health-check
  */
 router.get('/health-check', (req, res) => res.send('OK'));
 
 // mount movie routes
-router.use('/v1/movies', movieRoutes);
+router.use('/movies', movieRoutes);
 
 module.exports = router;

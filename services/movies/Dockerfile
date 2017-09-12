@@ -1,9 +1,9 @@
 FROM node:8.1.4-alpine
 
+EXPOSE 3000
+
 ARG NODE_ENV
 ENV NODE_ENV $NODE_ENV
-
-EXPOSE 3000 3001
 
 RUN mkdir /app
 WORKDIR /app

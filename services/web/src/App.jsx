@@ -51,7 +51,7 @@ class App extends Component {
   }
   saveMovie (movie) {
     const options = {
-      url: 'http://localhost:3001/v1/movies',
+      url: 'http://localhost:3000/v1/movies',
       method: 'post',
       data: {
         title: movie
@@ -63,7 +63,7 @@ class App extends Component {
   }
   getMovies() {
     const options = {
-      url: 'http://localhost:3001/v1/movies',
+      url: 'http://localhost:3000/v1/movies',
       method: 'get'
     };
     return axios(options)
