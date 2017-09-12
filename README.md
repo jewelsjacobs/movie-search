@@ -33,16 +33,24 @@ Running on Azure:
 
 ### Build and Run the App
 
-#### Development
+#### Set the Environment variables
 
 ```sh
-$ ./dev.sh
+$ export NODE_ENV=development
 ```
 
-#### Production
+#### Fire up the Containers
+
+Build the images:
 
 ```sh
-$ ./prod.sh
+$ docker-compose build
+```
+
+Run the containers:
+
+```sh
+$ docker-compose up -d
 ```
 
 #### Sanity Check
