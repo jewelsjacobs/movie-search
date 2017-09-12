@@ -49,7 +49,7 @@ $ ./prod.sh
 
 Test out the movie services...
 
-- [API docs](http://jewelsjacobs.github.io/movie-search)
+- [API docs](https://jewelsjacobs.github.io/movie-search/index.html)
 
 ##### (2) Movies - http://localhost:3000
 
