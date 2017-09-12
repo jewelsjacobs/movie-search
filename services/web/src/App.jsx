@@ -1,16 +1,14 @@
 import React, {Component} from 'react'
 import { Route, Redirect, Switch, Link } from 'react-router-dom'
 import axios from 'axios'
-
-const API_URL = 'http://www.omdbapi.com/?&s=';
-
-import './App.css';
-
 import SearchBar from './components/SearchBar';
 import MovieList from './components/MovieList';
 import FlashMessages from './components/FlashMessages';
 import NotFound from './components/NotFound';
 import SavedMovies from './components/SavedMovies';
+import './App.css';
+
+const API_URL = 'http://www.omdbapi.com/?&s=';
 
 class App extends Component {
   constructor (props) {
