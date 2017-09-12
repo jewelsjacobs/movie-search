@@ -11,4 +11,4 @@ ADD package.json yarn.lock /app/
 RUN yarn global add nodemon && yarn --pure-lockfile
 ADD . /app
 
-CMD ["yarn", "docker:${NODE_ENV}"]
+CMD "yarn", "docker:start"]

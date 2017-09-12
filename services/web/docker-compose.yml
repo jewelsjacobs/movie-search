@@ -1,0 +1,12 @@
+version: "2.1"
+services:
+  web-service:
+    container_name: web-service
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - '3007:3006' # expose ports - HOST:CONTAINER
+    environment:
+      - NODE_ENV=${NODE_ENV}
+    command: yarn start

@@ -2,12 +2,6 @@
 
 [![Build Status](https://travis-ci.org/jewelsjacobs/movie-search.svg?branch=master)](https://travis-ci.org/jewelsjacobs/movie-search)
 
-## Demo
-
-Running on Azure:
-
-
-
 ## Architecture
 
 | Name             | Service | Container | Tech                 |
@@ -33,25 +27,20 @@ Running on Azure:
 
 ### Build and Run the App
 
-#### Set the Environment variables
+in a terminal window: 
 
 ```sh
-$ export NODE_ENV=development
+$ cd /movie-search/services/movies
+$ yarn docker:dev
 ```
 
-#### Fire up the Containers
-
-Build the images:
+in a separate terminal window:
 
 ```sh
-$ docker-compose build
+$ cd /movie-search/services/web
+$ yarn docker:dev
 ```
 
-Run the containers:
-
-```sh
-$ docker-compose up -d
-```
 
 #### Sanity Check
 
