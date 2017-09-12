@@ -49,14 +49,7 @@ $ ./prod.sh
 
 Test out the movie services...
 
-- [API docs](https://jewelsjacobs.github.io/movie-search/index.html)
-
-##### (2) Movies - http://localhost:3000
-
-| Endpoint      | HTTP Method | CRUD Method | Result                    |
-|---------------|-------------|-------------|---------------------------|
-| /movies/ping  | GET         | READ        | `pong`                    |
-| /movies       | POST        | CREATE      | add a single movie        |
+- [API docs with curl tests](https://jewelsjacobs.github.io/movie-search/index.html)
 
 ##### (3) Web - http://localhost:3007
 
